@@ -1,0 +1,27 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" 
+                access="global" 
+                controller="ContainerControllerA">
+    <!-- DESIGN -->
+ <aura:attribute name="ComponentSx" type="String" />
+ <aura:attribute name="ComponentDx" type="String" /> 
+    <!-- BODY COMPONENT-->
+    <aura:attribute name="BodyS" type="Aura.Component[]" />
+    <aura:attribute name="BodyD" type="Aura.Component[]" /> 
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <div class="c-container">
+        <lightning:layout horizontalAlign="space" multipleRows="false">
+            <lightning:layoutItem size="6" padding="around-small">
+                
+                {!v.BodyS}
+            </lightning:layoutItem>
+            <lightning:layoutItem size="6" padding="around-small">
+              
+               {!v.BodyD} 
+                
+            </lightning:layoutItem>
+           
+        </lightning:layout>
+    </div>
+    
+</aura:component>
