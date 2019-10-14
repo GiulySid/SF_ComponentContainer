@@ -1,0 +1,4 @@
+<design:component >
+   <design:attribute name="ComponentSx"  label="Left Component"   datasource="apex://ComponentContainer_PickList" />
+    <design:attribute name="ComponentDx"  label="Right Component"   datasource="apex://ComponentContainer_PickList" />
+</design:component>
