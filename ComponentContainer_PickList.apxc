@@ -1,4 +1,7 @@
 global class ComponentContainer_PickList extends VisualEditor.DynamicPickList{
+//create metadata with a 'Parametri__c' field where are listed the name of the parameters needed in the component separated by ';'
+//a 'Valori__c' field where are listed the value of the parameters needed in the component separated by ';' in the SAME order of the param
+//a 'NomeComponent__c' field populated with the name of the component you want to recall
  global override VisualEditor.DataRow getDefaultValue(){
         VisualEditor.DataRow defaultValue = new VisualEditor.DataRow('Contact Card', 'Contact_Card');
         return defaultValue;
