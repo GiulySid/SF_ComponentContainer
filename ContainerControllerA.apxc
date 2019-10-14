@@ -1,0 +1,11 @@
+public class ContainerControllerA {
+	@AuraEnabled
+    public static SObject getName(String mtdName){ 
+        return  [
+                SELECT 
+                Id, Label,Parametri__c,Valori__c,NomeComponent__c
+                FROM ComponentContainer_PickList__mdt WHERE Label=:mtdName LIMIT 1 
+            ];
+        
+    }
+}
